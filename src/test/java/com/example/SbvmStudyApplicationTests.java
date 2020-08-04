@@ -1,13 +1,21 @@
 package com.example;
 
-import org.junit.jupiter.api.Test;
+
+import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import javax.sql.DataSource;
+
 @SpringBootTest
-class SbvmStudyApplicationTests {
+public class SbvmStudyApplicationTests {
+
+	@Autowired
+	DataSource dataSource;
 
 	@Test
-	void contextLoads() {
+	public void contextLoads() {
+		 System.out.println(dataSource.getClass());
 	}
 
 }
