@@ -29,11 +29,23 @@
 			<version>2.1.1</version>
 		</dependency>
 
+		<!--jdbc-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
+		</dependency>
+
         <!--mysql-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <scope>runtime</scope>
+        </dependency>
+
+        <!--redis-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
 
         <!--web依赖-->
@@ -72,7 +84,7 @@
     </dependencies>
 
 	<build>
-        <resources>
+        <!--<resources>
             <resource>
                 <directory>src/main/resources</directory>
                 <includes>
@@ -82,7 +94,7 @@
                 </includes>
                 <filtering>false</filtering>
             </resource>
-        </resources>
+        </resources>-->
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
